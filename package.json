@@ -1,6 +1,6 @@
 {
   "name": "kkplanetnames",
-  "version": "2.0.0",
+  "version": "0.0.0-development",
   "description": "Get random planet names",
   "main": "dist/index.js",
   "scripts": {
@@ -13,11 +13,12 @@
     "watch:test": "mocha --watch",
     "report-coverage": "cat ./coverage/lcof.info | codecov",
     "lint": "eslint src",
-    "validate": "npm-run-all --parallel test lint build"
+    "validate": "npm-run-all --parallel test lint build",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kishorekumaru/kk-planet-names.git"
+    "url": "https://github.com/kishorekumaru/kk-planet-names.git"
   },
   "keywords": [
     "random",
@@ -52,7 +53,8 @@
     "npm-run-all": "2.3.0",
     "nyc": "7.1.0",
     "rimraf": "2.5.4",
-    "webpack": "1.13.1"
+    "webpack": "1.13.1",
+    "semantic-release": "^17.0.4"
   },
   "nyc": {
     "all": true,
